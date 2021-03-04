@@ -30,7 +30,11 @@ namespace SortedLinkedList
         {
             return count == 0;
         }
-}
+        public int ListSize()
+        {
+            return count;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
