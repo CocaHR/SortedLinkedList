@@ -26,14 +26,22 @@ namespace SortedLinkedList
             count = 0;
             first = null;
         }
-        public bool IsEmpty()
+        public void AddItem(List list, int new_data)
         {
-            return count == 0;
+            Node new_node = new Node(new_data);
+            new_node.next = list.first;
+            list.first = new_node;
+            count++;
         }
-        public int ListSize()
+        public void AddItemLast(List list, int new_data)
+        {
+
+        }
+        public int Length()
         {
             return count;
         }
+       
     }
     class Program
     {
